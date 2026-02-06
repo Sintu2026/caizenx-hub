@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useState, useMemo, useEffect } from 'react'
+import Link from 'next/link'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts'
 import { supabase, InvestmentScenario } from '@/lib/supabase'
 
@@ -378,6 +379,12 @@ export default function InvestmentComparison() {
               <p className="text-blue-200 text-sm mt-1">S&P 500 vs Real Estate (Condo & Townhouse) • Caizenx Hub</p>
             </div>
             <div className="flex flex-wrap items-center gap-3">
+              <Link
+                href="/credit-card-statement"
+                className="px-4 py-2 bg-green-600 hover:bg-green-700 rounded-lg text-sm font-medium transition-colors"
+              >
+                CC Statement Parser
+              </Link>
               <input
                 type="email"
                 placeholder="Your email"
