@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import { CRMProvider } from '@/lib/crm/store'
 
 export const metadata: Metadata = {
-  title: 'Caizenx Hub - Investment Comparison',
-  description: 'Compare S&P 500 vs Real Estate Investment Returns',
+  title: 'Caizenx Hub - Real Estate CRM',
+  description: 'CRM for real estate project marketing: leads, contracts, inventory, sales & buyer portal',
 }
 
 export default function RootLayout({
@@ -13,8 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-900 text-white min-h-screen">
-        {children}
+      <body className="min-h-screen bg-slate-50 text-slate-900">
+        <CRMProvider>{children}</CRMProvider>
       </body>
     </html>
   )
