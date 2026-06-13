@@ -372,6 +372,7 @@ export default function InvestmentComparison() {
       {/* Header */}
       <header className="bg-gradient-to-r from-blue-900 to-indigo-900 py-6 px-6 shadow-lg">
         <div className="max-w-7xl mx-auto">
+          <a href="/" className="mb-3 inline-flex items-center gap-1.5 text-sm text-blue-200 hover:text-white">← Back to CRM</a>
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div>
               <h1 className="text-2xl md:text-3xl font-bold">Investment Comparison Model</h1>
